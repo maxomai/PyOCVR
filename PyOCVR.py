@@ -51,6 +51,8 @@ def strip(s):
 
 def parse_firstname(candidate):
     arr=candidate.split(" ")
+    if (len(arr) < 4):
+        return('','','','')
     if (len(arr) == 1):
         fn=arr[0]
     else:
@@ -75,11 +77,12 @@ if __name__ == '__main__':
 
 
 
-#Copyright 2018-2021, Michael C Smith (mike@mikesmithfororegon.com)
-#Former Technology Officer and Second Vice-Chair, Democratic Party of Multnomah
-#County (https://multdems.org/)
-#Chair, Gun Owners Caucus, Democratic Party of Oregon
-#    (https://dpo.org/caucuses/gun-owners-caucus/)
+#Copyright 2018-2023, Michael C Smith (Mike@MikeSmithForOregon.com)
+#Chair, Gun Owners Caucus (2019-), Democratic Party of Oregon
+#       (https://dpo.org/caucuses/gun-owners-caucus/)
+#Rules Committee Chair (2021-), Former Second Vice-Chair (2019-21), 
+#and Former Technology Officer (2017-19), Multnomah County Democrats
+#       (https://multdems.org/)
 #
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
